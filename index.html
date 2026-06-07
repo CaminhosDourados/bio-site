@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Caminhos Dourados</title>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Banner Superior -->
+      <div class="banner"></div>
+
+      <!-- TROQUE PELA SUA LOGO -->
+      <img
+        src="https://res.cloudinary.com/dqmdqljmi/image/upload/v1780873443/cinza1_o3zpe7.png"
+        class="logo"
+      />
+
+      <div class="card-body">
+        <h1>Caminhos Dourados</h1>
+
+        <p class="subtitle">Horários &bull; Informações &bull; Transporte</p>
+
+        <!-- REDES -->
+        <div class="socials">
+          <!-- INSTAGRAM -->
+          <a
+            href="https://www.instagram.com/caminhosdouradosnf?igsh=ZWh3OXhiazVuMXFq"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- WHATSAPP -->
+          <a href="https://wa.me/5522988179194" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <!-- FACEBOOK -->
+          <a
+            href="https://www.facebook.com/caminhos.dourados.1"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+
+        <!-- BOTÃO HORÁRIOS -->
+        <button class="main-button" onclick="openModal('horariosModal')">
+          Horários de Ônibus
+        </button>
+
+        <!-- BOTÃO TRABALHE -->
+        <button class="main-button" onclick="openModal('trabalheModal')">
+          Trabalhe Conosco
+        </button>
+
+        <div class="footer">
+          Criado por
+          <a href="https://www.instagram.com/trioweb.br?igsh=cmpzc2dhYTc2NWZh"
+            >TrioWeb</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL HORÁRIOS -->
+    <div class="modal" id="horariosModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('horariosModal')">
+          &times;
+        </span>
+
+        <h2 class="modal-title">Horários de Ônibus</h2>
+
+        <!-- BANQUETE -->
+        <button class="modal-button" onclick="openModal('banqueteModal')">
+          Banquete x Bom Jardim
+        </button>
+
+        <!-- SÃO JOSÉ -->
+        <button class="modal-button" onclick="openModal('saoJoseModal')">
+          São José x Bom Jardim
+        </button>
+
+        <!-- BARRA ALEGRE -->
+        <button
+          class="modal-button"
+          onclick="
+            openImage(
+              'https://res.cloudinary.com/dqmdqljmi/image/upload/v1780870961/barraalegre_zpqaqa.png',
+            )
+          "
+        >
+          Barra Alegre x Bom Jardim
+        </button>
+
+        <!-- BNH -->
+        <button
+          class="modal-button"
+          onclick="
+            openImage(
+              'https://res.cloudinary.com/dqmdqljmi/image/upload/v1780870960/bnh_zlkoes.png',
+            )
+          "
+        >
+          Bom Jardim x BNH
+        </button>
+
+        <!-- CAMPO BELO -->
+        <button
+          class="modal-button"
+          onclick="
+            openImage(
+              'https://res.cloudinary.com/dqmdqljmi/image/upload/v1780870960/bemtevi_uhjxyt.png',
+            )
+          "
+        >
+          Bom Jardim x Campo Belo x Bem te vi x Silveira
+        </button>
+
+        <!-- FATIMA -->
+        <button
+          class="modal-button"
+          onclick="
+            openImage(
+              'https://res.cloudinary.com/dqmdqljmi/image/upload/v1780870960/fatima_ohxj0h.png',
+            )
+          "
+        >
+          Bom Jardim x Bairro de Fátima
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL BANQUETE -->
+    <div class="modal" id="banqueteModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('banqueteModal')">
+          &times;
+        </span>
+
+        <h2 class="modal-title">Banquete x Bom Jardim</h2>
+
+        <button
+          class="modal-button"
+          onclick="
+            openImage(
+              'https://res.cloudinary.com/dqmdqljmi/image/upload/v1780870961/WhatsApp_Image_2026-05-27_at_13.33.28_wo3b80.jpg',
+            )
+          "
+        >
+          Segunda a Sexta
+        </button>
+
+        <button
+          class="modal-button"
+          onclick="
+            openImage(
+              'https://res.cloudinary.com/dqmdqljmi/image/upload/v1780870961/banquete2_tsyhuc.png',
+            )
+          "
+        >
+          Sábado e Domingo
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL SÃO JOSÉ -->
+    <div class="modal" id="saoJoseModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('saoJoseModal')">
+          &times;
+        </span>
+
+        <h2 class="modal-title">São José x Bom Jardim</h2>
+
+        <button
+          class="modal-button"
+          onclick="
+            openImage(
+              'https://res.cloudinary.com/dqmdqljmi/image/upload/v1780870960/saojose1_l03s1j.png',
+            )
+          "
+        >
+          Segunda a Sexta
+        </button>
+
+        <button
+          class="modal-button"
+          onclick="
+            openImage(
+              'https://res.cloudinary.com/dqmdqljmi/image/upload/v1780870960/saojose2_ylc3xy.png',
+            )
+          "
+        >
+          Sábado
+        </button>
+
+        <button
+          class="modal-button"
+          onclick="
+            openImage(
+              'https://res.cloudinary.com/dqmdqljmi/image/upload/v1780870960/saojose3_majulv.png',
+            )
+          "
+        >
+          Domingo
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL TRABALHE -->
+    <div class="modal" id="trabalheModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('trabalheModal')">
+          &times;
+        </span>
+
+        <h2 class="modal-title">Trabalhe Conosco</h2>
+
+        <div class="work-text">
+          Envie seu currículo para:
+
+          <br /><br />
+
+          <strong>
+            <a href="mailto:caminhosrh@outlook.com">caminhosrh@outlook.com</a>
+          </strong>
+
+          <br /><br />
+
+          Nossa equipe entrará em contato caso surjam oportunidades compatíveis
+          com o seu perfil.
+        </div>
+      </div>
+    </div>
+
+    <!-- VISUALIZADOR DE IMAGEM -->
+    <div class="image-viewer" id="imageViewer">
+      <span class="close-image" onclick="closeImage()"> &times; </span>
+
+      <img id="viewerImage" />
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
